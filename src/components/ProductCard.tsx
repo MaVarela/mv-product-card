@@ -19,8 +19,7 @@ const { Provider } = ProductContext;
 
 export const ProductCard = ({ children, product, className, style, onChange, value, initialValues }: Props) => {
 
-  const { counter, increaseBy, maxCount, isMaxCountReached, reset }
-    = useProduct({ onChange, product, value, initialValues });
+  const { counter, increaseBy, maxCount, isMaxCountReached, reset } = useProduct({ onChange, product, value, initialValues });
 
   return (
     <Provider value={{
